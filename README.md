@@ -1,4 +1,4 @@
-# gwendolen-rosbridge
+# jason-rosbridge
 Jason environment that allows agents to publish/subscribe to ROS topics using rosbridge.
 
 We are using the [java_rosbridge](https://github.com/h2r/java_rosbridge) library to connect to rosbridge using Java code.
