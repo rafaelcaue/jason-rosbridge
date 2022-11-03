@@ -13,9 +13,11 @@ To test:
 5. Start ROS with rosbridge in a terminal using:   
    * For ROS 1: `roslaunch rosbridge_server rosbridge_websocket.launch`
    * For ROS 2: `ros2 launch rosbridge_server rosbridge_websocket_launch.xml`
-6. Run this Jason project
+6. Open another terminal (remember to source your ROS distro) and use the command:
+   * For ROS 1: `rostopic echo /java_to_ros`
+   * For ROS 2: `ros2 topic echo /java_to_ros`
+7. Run this Jason project (we suggest using Gradle: `./gradlew run`)
    * You should see the messages from Jason agents in the terminal from step 6
-7. Open another terminal (remember to source your ROS distro) and use the command `rostopic echo /java_to_ros` (this is where messages from Jason will appear)
 8. To test the subscriber, open another terminal and type:
    * For ROS 1: `rostopic pub ros_to_java std_msgs/String "hello from ros"`
    * For ROS 2: `ros2 topic pub /ros_to_java std_msgs/String "data: hello from ros"`
